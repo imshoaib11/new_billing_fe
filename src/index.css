@@ -1,0 +1,195 @@
+/* Custom Global Aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --bg-color: #f3f4f6;
+  --surface-color: #ffffff;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --input-bg: #f9fafb;
+  --input-border: #e5e7eb;
+}
+
+[data-bs-theme="dark"] {
+  --primary-color: #6366f1;
+  --primary-hover: #818cf8;
+  --bg-color: #111827;
+  --surface-color: #1f2937;
+  --text-dark: #f9fafb;
+  --text-light: #9ca3af;
+  --glass-bg: rgba(31, 41, 55, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --input-bg: #374151;
+  --input-border: #4b5563;
+}
+
+[data-bs-theme="dark"] .bg-white,
+[data-bs-theme="dark"] .bg-light {
+  background-color: var(--surface-color) !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+  color: var(--text-light) !important;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  background-color: var(--bg-color) !important;
+  color: var(--text-dark);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Premium Card Override */
+.card, .premium-card {
+  background: var(--surface-color);
+  border: none !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+  transition: all 0.3s ease;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Inputs and Forms */
+.form-control, .form-select {
+  border-radius: 10px !important;
+  border: 1px solid var(--input-border) !important;
+  padding: 0.6rem 1rem !important;
+  transition: all 0.2s;
+  box-shadow: none !important;
+  background-color: var(--input-bg) !important;
+  color: var(--text-dark) !important;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1) !important;
+  background-color: var(--surface-color) !important;
+  color: var(--text-dark) !important;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+  padding: 0.6rem 1.2rem !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none !important;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2) !important;
+  color: white !important;
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover) !important;
+  box-shadow: 0 6px 10px rgba(79, 70, 229, 0.3) !important;
+}
+.btn-info {
+  background-color: #06b6d4 !important;
+  color: white !important;
+}
+.btn-success {
+  background-color: #10b981 !important;
+}
+.btn-secondary {
+  background-color: #6b7280 !important;
+  color: white !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600 !important;
+  color: var(--text-dark) !important;
+}
+
+label {
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Table Enhancements */
+.table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  background-color: transparent !important;
+  margin-top: 0 !important;
+}
+.table thead th {
+  border-bottom: none !important;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: var(--text-light);
+  padding: 1rem;
+  font-weight: 600;
+}
+.table tbody tr {
+  background-color: var(--surface-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.table tbody tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+.table tbody td, .table tbody th {
+  border-top: none !important;
+  border-bottom: none !important;
+  padding: 1rem;
+  vertical-align: middle;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+.table tbody tr td:first-child, .table tbody tr th:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.table tbody tr td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Existing Custom Classes */
+.ip-width{
+    width:30%;
+}
+.sl-width{
+  width:50%;
+}
+
+/* Remove default spin-arrows from number inputs globally */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  -moz-appearance: textfield;
+  appearance: none;
+  margin: 0; 
+}
+
+input[type=number] {
+  -webkit-appearance: none; 
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
