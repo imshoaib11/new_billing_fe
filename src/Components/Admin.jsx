@@ -312,7 +312,7 @@ function Admin() {
 
                     <h5 className="fw-bold mb-3 border-bottom pb-2" style={{color: '#4f46e5'}}>Tracks</h5>
                     <div className="row mb-4">
-                      {['tinTin', 'fourWay', 'cargo', 'lpCuff', 'lpDower'].map(field => (
+                      {['tinTin', 'fourWay', 'cargo', 'lpCuff', 'lpDower','creep'].map(field => (
                         <div className="col-md-2 col-sm-4 mb-3" key={field}>
                           <label className="form-label fw-semibold text-muted text-capitalize" style={{fontSize: '0.85rem'}}>{field.replace(/([A-Z])/g, ' $1').trim()}</label>
                           <input type="number" className="form-control bg-white" name={field} value={stockFormData[field]} onChange={handleStockChange} style={{borderRadius: '8px'}} />
@@ -322,7 +322,7 @@ function Admin() {
 
                     <h5 className="fw-bold mb-3 border-bottom pb-2" style={{color: '#4f46e5'}}>Shorts</h5>
                     <div className="row mb-4">
-                      {['fourWayShorts', 'tinTinShorts', 'lpHigh', 'paper', 'jeans', 'cotton'].map(field => (
+                      {['fourWayShorts', 'tinTinShorts', 'lpHigh', 'paper', 'jeans', 'cotton','creepShorts'].map(field => (
                         <div className="col-md-2 col-sm-4 mb-3" key={field}>
                           <label className="form-label fw-semibold text-muted text-capitalize" style={{fontSize: '0.85rem'}}>{field.replace(/([A-Z])/g, ' $1').trim()}</label>
                           <input type="number" className="form-control bg-white" name={field} value={stockFormData[field] === 0 ? '' : stockFormData[field]} onChange={handleStockChange} placeholder="0" style={{borderRadius: '8px'}} />
@@ -332,7 +332,7 @@ function Admin() {
 
                     <h5 className="fw-bold mb-3 border-bottom pb-2" style={{color: '#4f46e5'}}>T/S Combo</h5>
                     <div className="row mb-4">
-                      {['mTsCmb', 'lTsCmb', 'xlTsCmb'].map(field => (
+                      {['mTsCmb', 'lTsCmb', 'xlTsCmb','xxlTsCmb'].map(field => (
                         <div className="col-md-2 col-sm-4 mb-3" key={field}>
                           <label className="form-label fw-bold text-muted text-uppercase" style={{fontSize: '0.8rem'}}>{field.replace(/([A-Z])/g, ' $1').trim()}</label>
                           <input type="number" className="form-control bg-white" name={field} value={stockFormData[field] === 0 ? '' : stockFormData[field]} onChange={handleStockChange} placeholder="0" style={{borderRadius: '8px'}} />
