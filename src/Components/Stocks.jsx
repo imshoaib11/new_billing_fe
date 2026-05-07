@@ -17,7 +17,8 @@ const stockData = [
     { name: "4WAY", key: "fourWay" },
     { name: "CARGO", key: "cargo" },
     { name: "LOOPKNIT CUFF", key: "lpCuff" },
-    { name: "LOOPKNIT DOWER", key: "lpDower" }
+    { name: "LOOPKNIT DOWER", key: "lpDower" },
+    { name: "CREEP", key: "creep" }
   ]},
   { title: "Shorts", items: [
     { name: "4WAY", key: "fourWayShorts" },
@@ -25,7 +26,8 @@ const stockData = [
     { name: "LOOPKNIT-H", key: "lpHigh" },
     { name: "PAPER", key: "paper" },
     { name: "JEANS", key: "jeans" },
-    { name: "COTTON", key: "cotton" }
+    { name: "COTTON", key: "cotton" },
+    { name: "CREEP", key: "creepShorts" }
   ]},
   { title: "T-Shirts Combo", items: [
     { name: "M", key: "mTsCmb" },
