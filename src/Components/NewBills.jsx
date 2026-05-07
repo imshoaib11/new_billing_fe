@@ -103,9 +103,9 @@ function NewBills() {
 
   const itemNameToProducts = {
     "T-shirt": ["F/S", "H/S", "5SLV", "Hoodie","Collar"],
-    "Track": ["Tin Tin", "4way", "Cargo", "LP-Cuff", "LP-Dower"],
-    "Shorts": ["Tin Tin-S", "4way-S", "LP-H", "Paper", "Jeans", "Cotton"],
-    "Combo T/S": ["M-TS-CMB","L-TS-CMB","XL-TS-CMB"],
+    "Track": ["Tin Tin", "4way", "Cargo", "LP-Cuff", "LP-Dower","Creep"],
+    "Shorts": ["Tin Tin-S", "4way-S", "LP-H", "Paper", "Jeans", "Cotton","Creep-S"],
+    "Combo T/S": ["M-TS-CMB","L-TS-CMB","XL-TS-CMB","XXL-TS-CMB"],
     "Combo T/P": ["L-TP-CMB","XL-TP-CMB","XXL-TP-CMB"],
     "Combo Shorts": ["L-CMB","XL-CMB","XXL-CMB"]
   };
