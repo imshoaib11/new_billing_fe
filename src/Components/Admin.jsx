@@ -15,9 +15,9 @@ function Admin() {
 
   const initialStockState = {
     fullSleeve: 0, fiSleeve: 0, halfSleeve: 0, collar: 0, hoodie: 0,
-    tinTin: 0, fourWay: 0, cargo: 0, lpCuff: 0, lpDower: 0,
-    fourWayShorts: 0, tinTinShorts: 0, lpHigh: 0, paper: 0, jeans: 0, cotton: 0,
-    mTsCmb: 0, lTsCmb: 0, xlTsCmb: 0, lCmb: 0, xlCmb: 0, xxlCmb: 0,
+    tinTin: 0, fourWay: 0, cargo: 0, lpCuff: 0, lpDower: 0, creep: 0,
+    fourWayShorts: 0, tinTinShorts: 0, lpHigh: 0, paper: 0, jeans: 0, cotton: 0, creepShorts: 0,
+    mTsCmb: 0, lTsCmb: 0, xlTsCmb: 0, xxlTsCmb: 0, lCmb: 0, xlCmb: 0, xxlCmb: 0,
     lTpCmb: 0, xlTpCmb: 0, xxlTpCmb: 0
   };
 
