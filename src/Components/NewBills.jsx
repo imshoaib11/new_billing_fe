@@ -422,7 +422,7 @@ function NewBills() {
                 <option value={"430"}>430</option>
                 <option value={"390"}>390</option>
                 <option value={"350"}>350</option>
-                <option value={"270"}>270</option>
+                <option value={"300"}>300</option>
                 <option value={"200"}>200</option>
                 <option value={"150"}>150</option>
                 <option value={"500"}>500</option>
