@@ -111,27 +111,29 @@ function NewBills() {
   };
 
   const catToPrice = {
-    "Cat-1": "390",
-    "Cat-2": "350",
-    "Cat-3": "270",
-    "Cat-4": "200",
-    "Cat-5": "150",
-    "Cat-6": "500",
+    "Cat-1": "430",
+    "Cat-2": "390",
+    "Cat-3": "350",
+    "Cat-4": "300",
+    "Cat-5": "200",
+    "Cat-6": "150",
+    "Cat-7": "500",
   }
 
   const priceToCat = {
-    "390": "Cat-1",
-    "350": "Cat-2",
-    "270": "Cat-3",
-    "200": "Cat-4",
-    "150": "Cat-5",
-    "500": "Cat-6",
+    "430": "Cat-1",
+    "390": "Cat-2",
+    "350": "Cat-3",
+    "300": "Cat-4",
+    "200": "Cat-5",
+    "150": "Cat-6",
+    "500": "Cat-7",
   }
 
   const handleCatChange = (e) => {
     const newCat = e.target.value;
     setSelectedCategory(newCat);
-    if (newCat === "Cat-6" && selectedQuantity !== "3" && selectedQuantity !== "4") {
+    if (newCat === "Cat-7" && selectedQuantity !== "3" && selectedQuantity !== "4") {
       setSelectedQuantity("");
     }
     if (catToPrice[newCat]) {
@@ -147,7 +149,7 @@ function NewBills() {
     if (priceToCat[newPrice]) {
       const newCat = priceToCat[newPrice];
       setSelectedCategory(newCat);
-      if (newCat === "Cat-6" && selectedQuantity !== "3" && selectedQuantity !== "4") {
+      if (newCat === "Cat-7" && selectedQuantity !== "3" && selectedQuantity !== "4") {
         setSelectedQuantity("");
       }
     } else {
@@ -243,7 +245,7 @@ function NewBills() {
   };
 
   const billTotalAmount = billItems.reduce((acc, item) => {
-    const itemTotal = item.category === "Cat-6" 
+    const itemTotal = item.category === "Cat-7" 
       ? (Number(item.price) || 0) 
       : (Number(item.price) * Number(item.quantity) || 0);
     return acc + itemTotal;
@@ -408,6 +410,7 @@ function NewBills() {
                 <option value={"Cat-4"}>Cat-4</option>
                 <option value={"Cat-5"}>Cat-5</option>
                 <option value={"Cat-6"}>Cat-6</option>
+                <option value={"Cat-7"}>Cat-7</option>
 
               </select>
             </div>
@@ -416,6 +419,7 @@ function NewBills() {
               <label className="form-label">Price</label>
               <select className="form-select" value={selectedPrice} onChange={handlePriceChange}>
                 <option>Choose...</option>
+                <option value={"430"}>430</option>
                 <option value={"390"}>390</option>
                 <option value={"350"}>350</option>
                 <option value={"270"}>270</option>
@@ -433,6 +437,8 @@ function NewBills() {
                 <option value="L">L</option>
                 <option value="XL">XL</option>
                 <option value="XXL">XXL</option>
+                <option value="XXL">3XL</option>
+                <option value="XXL">4XL</option>
               </select>
             </div>
 
@@ -440,7 +446,7 @@ function NewBills() {
               <label className="form-label">Quantity</label>
               <select className="form-select" value={selectedQuantity} onChange={(e) => setSelectedQuantity(e.target.value)}>
                 <option value="">Choose...</option>
-                {selectedCategory === "Cat-6" ? (
+                {selectedCategory === "Cat-7" ? (
                   <>
                     <option value="3">3</option>
                     <option value="4">4</option>
