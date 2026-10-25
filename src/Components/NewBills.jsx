@@ -103,7 +103,7 @@ function NewBills() {
 
   const itemNameToProducts = {
     "T-shirt": ["F/S", "H/S", "5SLV", "Hoodie","Collar"],
-    "Track": ["Tin Tin", "4way", "Cargo", "LP-Cuff", "LP-Dower","Creep","Baggy],
+    "Track": ["Tin Tin", "4way", "Cargo", "LP-Cuff", "LP-Dower","Creep","Baggy"],
     "Shorts": ["Tin Tin-S", "4way-S", "LP-H", "Paper", "Jeans", "Cotton","Creep-S"],
     "Combo T/S": ["M-TS-CMB","L-TS-CMB","XL-TS-CMB","XXL-TS-CMB"],
     "Combo T/P": ["L-TP-CMB","XL-TP-CMB","XXL-TP-CMB"],
