@@ -18,7 +18,8 @@ const stockData = [
     { name: "CARGO", key: "cargo" },
     { name: "LOOPKNIT CUFF", key: "lpCuff" },
     { name: "LOOPKNIT DOWER", key: "lpDower" },
-    { name: "CREEP", key: "creep" }
+    { name: "CREEP", key: "creep" },
+    { name: "BAGGY", key: "baggy" }
   ]},
   { title: "Shorts", items: [
     { name: "4WAY", key: "fourWayShorts" },
